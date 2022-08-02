@@ -7,12 +7,7 @@
       style="width: 100%; height: 100%; z-index: 999; position: absolute"
     ></div>
 
-    <!-- github 徽标 -->
-    <a
-      v-if="$config.GITHUB"
-      class="github mdi mdi-github-circle"
-      :href="$config.GITHUB"
-    ></a>
+
 
     <!-- 中间LOGO部分 -->
     <div
@@ -28,7 +23,7 @@
         <div :class="['hello', { hello_bottom: flag }]">
           <div>{{ slogan[i] }}</div>
           <div class="hello_bottom_text">
-            点击以访问 {{ $config.BLOG_NAME }}
+            {{ $config.BLOG_NAME }}
           </div>
         </div>
       </div>
